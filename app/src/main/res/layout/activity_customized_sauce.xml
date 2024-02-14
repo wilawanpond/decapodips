@@ -18,7 +18,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView22"
@@ -32,7 +33,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView16" />
+        app:layout_constraintTop_toTopOf="@+id/textView16"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/savedIcon"
@@ -43,7 +45,9 @@
         app:layout_constraintHorizontal_bias="0.911"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bookmark" />
+        app:srcCompat="@drawable/bookmark"
+        android:contentDescription="save icon"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView18"
@@ -54,19 +58,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView22"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/saucebadge" />
+        app:srcCompat="@drawable/saucebadge"
+        android:contentDescription="decapodips poster"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="79dp"
+        android:contentDescription="Rectangle menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/rectangle_menu"
-        android:contentDescription="Rectangle menu" />
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -77,9 +82,10 @@
         android:contentDescription="circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.891"
-        app:srcCompat="@drawable/circle" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/circle"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -91,11 +97,12 @@
         android:contentDescription="circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.823"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.891"
-        app:srcCompat="@drawable/circle" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/circle"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -106,9 +113,10 @@
         android:contentDescription="circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.891"
-        app:srcCompat="@drawable/circle" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/circle"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -119,9 +127,10 @@
         android:contentDescription="circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.891"
-        app:srcCompat="@drawable/circle" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/circle"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/sauceBtn"
@@ -132,7 +141,8 @@
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="@+id/imageView6"
         app:srcCompat="@drawable/ladle"
-        android:contentDescription="sauce icon" />
+        android:contentDescription="sauce icon"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/homeBtn"
@@ -143,7 +153,8 @@
         app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
         app:srcCompat="@drawable/baseline_home_24"
-        android:contentDescription="home icon" />
+        android:contentDescription="home icon"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/favoriteBtn"
@@ -154,7 +165,8 @@
         app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="@+id/imageView7"
         app:srcCompat="@drawable/bookmark"
-        android:contentDescription="favorite icon" />
+        android:contentDescription="favorite icon"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/accountBtn"
@@ -165,7 +177,8 @@
         app:layout_constraintStart_toStartOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/imageView8"
         app:srcCompat="@drawable/user"
-        android:contentDescription="user icon" />
+        android:contentDescription="user icon"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -179,7 +192,8 @@
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.65"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView17"
@@ -194,7 +208,8 @@
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.65"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView18"
@@ -209,7 +224,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.655" />
+        app:layout_constraintVertical_bias="0.655"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView15"
@@ -224,6 +240,7 @@
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.65"
+        tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
