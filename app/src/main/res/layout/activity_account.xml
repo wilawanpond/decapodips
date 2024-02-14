@@ -329,7 +329,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        tools:ignore="HardcodedText" />
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
@@ -406,7 +407,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        tools:ignore="HardcodedText" />
 
     <HorizontalScrollView
         android:layout_width="match_parent"
