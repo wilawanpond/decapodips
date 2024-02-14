@@ -9,8 +9,9 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="412dp"
+        android:layout_width="match_parent"
         android:layout_height="258dp"
+        android:contentDescription="Rectangle upside down"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -18,20 +19,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/yellow_box_upsidedown"
-        android:contentDescription="Rectangle upside down"
         tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="79dp"
+        android:contentDescription="Rectangle menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/rectangle_menu"
-        android:contentDescription="Rectangle menu"
         tools:ignore="HardcodedText" />
 
     <ImageView
@@ -316,5 +316,173 @@
         app:layout_constraintTop_toTopOf="@+id/imageView16"
         app:layout_constraintVertical_bias="0.44"
         tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Addresses"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_rectangle"
+                android:elevation="5dp"
+                android:fontFamily="@font/fredoka_one"
+                android:padding="10dp"
+                android:text="9709 Heather St. Hartford, CT 06106"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,InefficientWeight" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_rectangle"
+                android:elevation="5dp"
+                android:fontFamily="@font/fredoka_one"
+                android:padding="10dp"
+                android:text="8435 E. Riverview Street Frankfort, KY 40601"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,InefficientWeight" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_rectangle"
+                android:elevation="5dp"
+                android:fontFamily="@font/fredoka_one"
+                android:padding="10dp"
+                android:text="756 Devon Street Forest Hills, NY 11375"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,InefficientWeight" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Payment Methods"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView39">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@drawable/rounded_rectangle"
+                android:src="@drawable/visa"
+                tools:layout_editor_absoluteX="34dp"
+                tools:layout_editor_absoluteY="524dp"
+                android:contentDescription="visa"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:background="@drawable/rounded_rectangle"
+                android:src="@drawable/mastercard"
+                tools:ignore="HardcodedText,InefficientWeight"
+                tools:layout_editor_absoluteX="34dp"
+                tools:layout_editor_absoluteY="524dp"
+                android:contentDescription="mastercard" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:background="@drawable/rounded_rectangle"
+                android:src="@drawable/paypal"
+                tools:ignore="HardcodedText,InefficientWeight"
+                tools:layout_editor_absoluteX="34dp"
+                tools:layout_editor_absoluteY="524dp"
+                android:contentDescription="paypal" />
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:background="@drawable/rounded_rectangle"
+                android:src="@drawable/applepay"
+                tools:ignore="HardcodedText,InefficientWeight"
+                tools:layout_editor_absoluteX="34dp"
+                tools:layout_editor_absoluteY="524dp"
+                android:contentDescription="applepay" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
