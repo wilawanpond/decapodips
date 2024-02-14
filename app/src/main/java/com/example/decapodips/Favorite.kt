@@ -1,7 +1,9 @@
 package com.example.decapodips
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.decapodips.adapters.ProductsAdapter
@@ -16,6 +18,12 @@ class Favorite : AppCompatActivity() {
         setContentView(R.layout.activity_favorite)
 
         init()
+
+        val toHome = findViewById<ImageView>(R.id.homeBtn)
+        toHome.setOnClickListener{
+            var intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun init() {
@@ -25,5 +33,9 @@ class Favorite : AppCompatActivity() {
 
         productsAdapter = ProductsAdapter(StoredProducts.products)
         recyclerView.adapter = productsAdapter
+
+
     }
+
+
 }
