@@ -57,6 +57,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,Favorite::class.java)
             startActivity(intent)
         }
+
+        // click on cart icon
+        val cartIcon = findViewById<ImageView>(R.id.cartIcon)
+        cartIcon.setOnClickListener {
+            val intent = Intent(this, ShoppingCart::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun init() {
