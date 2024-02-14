@@ -2,7 +2,6 @@ package com.example.decapodips
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ListView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.decapodips.adapters.SpecialAdapter
@@ -20,11 +19,9 @@ class SavedSauce : AppCompatActivity() {
     }
 
     private fun init() {
-        recyclerView.findViewById<ListView>(R.id.recyclerView2)
+        recyclerView = findViewById(R.id.savedSauceRecycler)
         recyclerView.setHasFixedSize(true)
-        val layoutManager = LinearLayoutManager(this)
-        layoutManager.orientation = LinearLayoutManager.VERTICAL
-        recyclerView.layoutManager = layoutManager
+        recyclerView.layoutManager = LinearLayoutManager(this)
 
         specialAdapter = SpecialAdapter(StoredSpecial.special)
         recyclerView.adapter = specialAdapter
