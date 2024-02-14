@@ -12,7 +12,6 @@ import com.example.decapodips.model.StoredProducts
 
 class MainActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
-//    private lateinit var productsList: ArrayList<Product>
     private lateinit var productsAdapter: ProductsAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {

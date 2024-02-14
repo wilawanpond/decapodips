@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 
 class CustomizedSauce : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +16,6 @@ class CustomizedSauce : AppCompatActivity() {
         savedIcon.setOnClickListener {
             var intent = Intent(this, SavedSauce::class.java)
             startActivity(intent)
-
         }
 
         // to Main Activity
