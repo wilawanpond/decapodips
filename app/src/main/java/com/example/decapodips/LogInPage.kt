@@ -18,7 +18,7 @@ class LogInPage : AppCompatActivity() {
         val signUptxt = findViewById<TextView>(R.id.loginText)
 
         signUptxt.setOnClickListener{
-            var intent = Intent(this, SignUpPage::class.java)
+            val intent = Intent(this, SignUpPage::class.java)
             startActivity(intent)
         }
 
@@ -27,7 +27,7 @@ class LogInPage : AppCompatActivity() {
 
         loginBtn.setOnClickListener {
             val message: String = findViewById<EditText>(R.id.showMessageTxt).text.toString()
-            var intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             intent.putExtra("login_username", message)
             startActivity(intent)
         }

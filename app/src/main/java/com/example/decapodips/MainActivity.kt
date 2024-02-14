@@ -34,27 +34,27 @@ class MainActivity : AppCompatActivity() {
         // Click on profile icon
         val profileIcon = findViewById<ImageView>(R.id.profileIcon)
         profileIcon.setOnClickListener{
-            var intent = Intent(this, Account::class.java)
+            val intent = Intent(this, Account::class.java)
             startActivity(intent)
         }
 
         // click on account icon
         val accountBtn = findViewById<ImageView>(R.id.accountBtn)
         accountBtn.setOnClickListener {
-            var intent = Intent(this, Account::class.java)
+            val intent = Intent(this, Account::class.java)
             startActivity(intent)
         }
 
         // clicking on sauceBtn
         val sauceBtn = findViewById<ImageView>(R.id.sauceBtn)
         sauceBtn.setOnClickListener {
-            var intent = Intent(this, CustomizedSauce::class.java)
+            val intent = Intent(this, CustomizedSauce::class.java)
             startActivity(intent)
         }
 
         val toFavorite = findViewById<ImageView>(R.id.favoriteBtn)
         toFavorite.setOnClickListener {
-            var intent = Intent(this,Favorite::class.java)
+            val intent = Intent(this,Favorite::class.java)
             startActivity(intent)
         }
     }

@@ -17,7 +17,7 @@ class SignUpPage : AppCompatActivity() {
         val signIntxt = findViewById<TextView>(R.id.loginText)
 
         signIntxt.setOnClickListener{
-            var intent = Intent(this, LogInPage::class.java)
+            val intent = Intent(this, LogInPage::class.java)
             startActivity(intent)
         }
 
@@ -25,7 +25,7 @@ class SignUpPage : AppCompatActivity() {
         val signUpBtn = findViewById<Button>(R.id.signUpBtn)
 
         signUpBtn.setOnClickListener {
-            var intent = Intent(this, EbiKaniWelcome::class.java)
+            val intent = Intent(this, EbiKaniWelcome::class.java)
             startActivity(intent)
         }
 

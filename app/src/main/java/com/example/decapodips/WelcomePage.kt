@@ -14,14 +14,14 @@ class WelcomePage : AppCompatActivity() {
         val signInBtn = findViewById<Button>(R.id.signInBtn)
 
         signInBtn.setOnClickListener {
-            var intent = Intent(this,LogInPage::class.java)
+            val intent = Intent(this,LogInPage::class.java)
             startActivity(intent)
         }
 
         val signUpBtn = findViewById<Button>(R.id.signUpBtn)
 
         signUpBtn.setOnClickListener {
-            var intent = Intent(this, SignUpPage::class.java)
+            val intent = Intent(this, SignUpPage::class.java)
             startActivity(intent)
         }
     }

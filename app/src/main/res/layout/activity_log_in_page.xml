@@ -22,7 +22,7 @@
             android:layout_marginTop="272dp"
             android:layout_marginEnd="50dp"
             android:background="@drawable/custom_edittext"
-            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawableStart="@drawable/baseline_person_24"
             android:drawablePadding="10dp"
             android:ems="10"
             android:fontFamily="@font/poppins"
@@ -32,7 +32,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
@@ -41,9 +42,8 @@
             android:layout_marginStart="50dp"
             android:layout_marginEnd="50dp"
             android:layout_marginBottom="260dp"
-
             android:background="@drawable/custom_edittext"
-            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawableStart="@drawable/baseline_lock_24"
             android:drawablePadding="10dp"
             android:ems="10"
             android:fontFamily="@font/poppins"
@@ -55,7 +55,8 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/showMessageTxt"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/textView8"
@@ -69,7 +70,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.81"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+            tools:ignore="HardcodedText" />
 
         <Button
             android:id="@+id/loginBtn"
@@ -93,7 +95,8 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8"
-            app:layout_constraintVertical_bias="0.056" />
+            app:layout_constraintVertical_bias="0.056"
+            tools:ignore="HardcodedText" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -113,7 +116,8 @@
                 android:fontFamily="@font/fredoka_one"
                 android:text="Don't have an account?"
                 android:textColor="#FFFFFF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/loginText"
@@ -124,7 +128,8 @@
                 android:paddingLeft="5dp"
                 android:text="Register"
                 android:textColor="#E32227"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
         </LinearLayout>
 
         <TextView
@@ -139,7 +144,8 @@
             android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/textView6"
@@ -153,7 +159,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText" />
 
         <ImageView
             android:id="@+id/facebookBtn"
@@ -165,7 +172,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/loginBtn"
             app:layout_constraintVertical_bias="0.142"
-            app:srcCompat="@drawable/facebook" />
+            app:srcCompat="@drawable/facebook"
+            android:contentDescription="facebook icon"
+            tools:ignore="HardcodedText" />
 
         <ImageView
             android:id="@+id/instagramBtn"
@@ -176,7 +185,9 @@
             app:layout_constraintStart_toEndOf="@+id/facebookBtn"
             app:layout_constraintTop_toBottomOf="@+id/loginBtn"
             app:layout_constraintVertical_bias="0.428"
-            app:srcCompat="@drawable/instagram" />
+            app:srcCompat="@drawable/instagram"
+            android:contentDescription="instagram icon"
+            tools:ignore="HardcodedText" />
 
         <ImageView
             android:id="@+id/emailBtn"
@@ -190,7 +201,9 @@
             app:layout_constraintStart_toEndOf="@+id/instagramBtn"
             app:layout_constraintTop_toBottomOf="@+id/loginBtn"
             app:layout_constraintVertical_bias="0.428"
-            app:srcCompat="@drawable/email" />
+            app:srcCompat="@drawable/email"
+            android:contentDescription="email icon"
+            tools:ignore="HardcodedText" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -21,19 +21,19 @@ class Favorite : AppCompatActivity() {
 
         val toHome = findViewById<ImageView>(R.id.homeBtn)
         toHome.setOnClickListener{
-            var intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
         val toUrSauce = findViewById<ImageView>(R.id.sauceBtn)
         toUrSauce.setOnClickListener{
-         var intent = Intent(this,CustomizedSauce::class.java )
-         startActivity(intent)
+            val intent = Intent(this,CustomizedSauce::class.java )
+            startActivity(intent)
         }
 
         val toAccount = findViewById<ImageView>(R.id.accountBtn)
         toAccount.setOnClickListener{
-            var intent = Intent(this,Account::class.java)
+            val intent = Intent(this,Account::class.java)
             startActivity(intent)
         }
     }
@@ -45,8 +45,6 @@ class Favorite : AppCompatActivity() {
 
         productsAdapter = ProductsAdapter(StoredProducts.products)
         recyclerView.adapter = productsAdapter
-
-
     }
 
 

@@ -3,8 +3,6 @@ package com.example.decapodips
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 
@@ -16,14 +14,14 @@ class EditProfile : AppCompatActivity() {
         // Sign out clicking
         val signOutText = findViewById<TextView>(R.id.signOutText)
         signOutText.setOnClickListener{
-            var intent = Intent(this, LogInPage::class.java)
+            val intent = Intent(this, LogInPage::class.java)
             startActivity(intent)
         }
 
         // back button
         val backBtn = findViewById<ImageView>(R.id.backBtn)
         backBtn.setOnClickListener {
-            var intent = Intent(this, Account::class.java)
+            val intent = Intent(this, Account::class.java)
             startActivity(intent)
         }
     }

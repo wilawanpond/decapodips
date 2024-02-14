@@ -16,7 +16,7 @@ class EbiKaniWelcome : AppCompatActivity() {
         val backBtn = findViewById<ImageView>(R.id.backBtn)
 
         backBtn.setOnClickListener{
-            var intent = Intent(this, SignUpPage::class.java)
+            val intent = Intent(this, SignUpPage::class.java)
             startActivity(intent)
         }
         // submit button
@@ -25,7 +25,7 @@ class EbiKaniWelcome : AppCompatActivity() {
         submitBtn.setOnClickListener {
             val message:String =findViewById<EditText>(R.id.showText).text.toString()
 
-            var intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             intent.putExtra("username", message)
             startActivity(intent)
 
