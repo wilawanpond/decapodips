@@ -57,7 +57,7 @@ class SavedSauce : AppCompatActivity() {
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         recyclerView.layoutManager = layoutManager
 
-        specialAdapter = SpecialAdapter(StoredSpecial.special)
+        specialAdapter = SpecialAdapter(this, StoredSpecial.special)
         recyclerView.adapter = specialAdapter
     }
 

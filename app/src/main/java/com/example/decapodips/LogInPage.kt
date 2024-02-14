@@ -1,10 +1,12 @@
 package com.example.decapodips
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 
 class LogInPage : AppCompatActivity() {
@@ -28,6 +30,33 @@ class LogInPage : AppCompatActivity() {
             var intent = Intent(this, MainActivity::class.java)
             intent.putExtra("login_username", message)
             startActivity(intent)
+        }
+
+        // another sign in options (facebook)
+        val facebookBtn = findViewById<ImageView>(R.id.facebookBtn)
+        facebookBtn.setOnClickListener {
+            val url = "https://www.facebook.com/"
+            val facebook = Intent(Intent.ACTION_VIEW)
+            facebook.setData(Uri.parse(url))
+            startActivity(facebook)
+        }
+
+        // instagram
+        val instagramBtn = findViewById<ImageView>(R.id.instagramBtn)
+        instagramBtn.setOnClickListener {
+            val url = "https://www.instagram.com/"
+            val instagram = Intent(Intent.ACTION_VIEW)
+            instagram.setData((Uri.parse(url)))
+            startActivity(instagram)
+        }
+
+        // email
+        val emailBtn = findViewById<ImageView>(R.id.emailBtn)
+        emailBtn.setOnClickListener {
+            val url = "https://mail.google.com/"
+            val email = Intent(Intent.ACTION_VIEW)
+            email.setData(Uri.parse(url))
+            startActivity(email)
         }
 
     }
