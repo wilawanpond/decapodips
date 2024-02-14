@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:fontFamily="@font/darumadropone_regular"
-        android:text="TextView"
+        android:text="MingMing"
         android:textColor="#E32227"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
