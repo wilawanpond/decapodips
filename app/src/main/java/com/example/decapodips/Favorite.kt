@@ -24,6 +24,18 @@ class Favorite : AppCompatActivity() {
             var intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        val toUrSauce = findViewById<ImageView>(R.id.sauceBtn)
+        toUrSauce.setOnClickListener{
+         var intent = Intent(this,CustomizedSauce::class.java )
+         startActivity(intent)
+        }
+
+        val toAccount = findViewById<ImageView>(R.id.accountBtn)
+        toAccount.setOnClickListener{
+            var intent = Intent(this,Account::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun init() {
