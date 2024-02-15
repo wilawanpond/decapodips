@@ -42,7 +42,7 @@ class CustomizedSauce : AppCompatActivity() {
 
         val crabBtn = findViewById<Button>(R.id.crabBtn)
         crabBtn.setOnClickListener{
-            Toast.makeText(this, crabBtn.text, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, crabBtn.text , Toast.LENGTH_SHORT).show()
         }
 
         val shrimpBtn = findViewById<Button>(R.id.shrimpBtn)
@@ -54,6 +54,44 @@ class CustomizedSauce : AppCompatActivity() {
         noMeatBtn.setOnClickListener{
            Toast.makeText(this, noMeatBtn.text, Toast.LENGTH_SHORT).show()
         }
+
+        val garlicBtn = findViewById<Button>(R.id.garlicBtn)
+        garlicBtn.setOnClickListener{
+            Toast.makeText(this, garlicBtn.text, Toast.LENGTH_SHORT).show()
+        }
+
+        val chiliBtn = findViewById<Button>(R.id.chiliBtn)
+        chiliBtn.setOnClickListener{
+            Toast.makeText(this, chiliBtn.text, Toast.LENGTH_SHORT).show()
+        }
+
+        val corianderBtn = findViewById<Button>(R.id.corianderBtn)
+        corianderBtn.setOnClickListener{
+            Toast.makeText(this, corianderBtn.text, Toast.LENGTH_SHORT).show()
+        }
+
+        val eschalotBtn = findViewById<Button>(R.id.eschalotBtn)
+        eschalotBtn.setOnClickListener{
+            Toast.makeText(this, eschalotBtn.text, Toast.LENGTH_SHORT).show()
+        }
+
+        val gingerBtn = findViewById<Button>(R.id.gingerBtn)
+        gingerBtn.setOnClickListener{
+            Toast.makeText(this, gingerBtn.text, Toast.LENGTH_SHORT).show()
+        }
+
+        val pepperBtn = findViewById<Button>(R.id.pepperBtn)
+        pepperBtn.setOnClickListener{
+            Toast.makeText(this, pepperBtn.text, Toast.LENGTH_SHORT).show()
+        }
+
+
+
+
+
+
+
+
 
 
 
