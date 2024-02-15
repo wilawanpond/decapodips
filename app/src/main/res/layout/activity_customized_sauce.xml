@@ -52,7 +52,7 @@
     <ImageView
         android:id="@+id/imageView18"
         android:layout_width="341dp"
-        android:layout_height="204dp"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -247,6 +247,7 @@
         android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/fredoka_one"
         android:text="Main Ingredients"
         android:textColor="@color/black"
@@ -255,7 +256,7 @@
         app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView18"
-        tools:ignore="HardcodedText"/>
+        tools:ignore="HardcodedText" />
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView2"
@@ -336,6 +337,7 @@
         tools:ignore="HardcodedText" />
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="12dp"
@@ -442,8 +444,90 @@
         android:id="@+id/textView41"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/fredoka_one"
         android:text="Spiciness Level"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="553dp" />
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView3"
+        tools:ignore="HardcodedText" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView41">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <Button
+                android:id="@+id/mildBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/fredoka_one"
+                android:text="Mild"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/originalBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/fredoka_one"
+                android:text="Original"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/mediumBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/fredoka_one"
+                android:text="Medium"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/hotBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/fredoka_one"
+                android:text="Hot!"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
