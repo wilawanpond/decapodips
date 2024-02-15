@@ -42,20 +42,17 @@ class CustomizedSauce : AppCompatActivity() {
 
         val crabBtn = findViewById<Button>(R.id.crabBtn)
         crabBtn.setOnClickListener{
-            android.widget.Toast.makeText(this, crabBtn.text, Toast.LENGTH_SHORT).show()
-
+            Toast.makeText(this, crabBtn.text, Toast.LENGTH_SHORT).show()
         }
 
         val shrimpBtn = findViewById<Button>(R.id.shrimpBtn)
         shrimpBtn.setOnClickListener{
-            android.widget.Toast.makeText(this, shrimpBtn.text, Toast.LENGTH_SHORT).show()
-
+            Toast.makeText(this, shrimpBtn.text, Toast.LENGTH_SHORT).show()
         }
 
         val noMeatBtn = findViewById<Button>(R.id.noMeatBtn)
         noMeatBtn.setOnClickListener{
-            android.widget.Toast.makeText(this, noMeatBtn.text, Toast.LENGTH_SHORT).show()
-
+           Toast.makeText(this, noMeatBtn.text, Toast.LENGTH_SHORT).show()
         }
 
 
