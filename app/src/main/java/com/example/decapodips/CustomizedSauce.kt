@@ -3,7 +3,9 @@ package com.example.decapodips
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
+import android.widget.Toast
 
 class CustomizedSauce : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,5 +39,26 @@ class CustomizedSauce : AppCompatActivity() {
             val intent = Intent(this, Favorite::class.java)
             startActivity(intent)
         }
+
+        val crabBtn = findViewById<Button>(R.id.crabBtn)
+        crabBtn.setOnClickListener{
+            android.widget.Toast.makeText(this, crabBtn.text, Toast.LENGTH_SHORT).show()
+
+        }
+
+        val shrimpBtn = findViewById<Button>(R.id.shrimpBtn)
+        shrimpBtn.setOnClickListener{
+            android.widget.Toast.makeText(this, shrimpBtn.text, Toast.LENGTH_SHORT).show()
+
+        }
+
+        val noMeatBtn = findViewById<Button>(R.id.noMeatBtn)
+        noMeatBtn.setOnClickListener{
+            android.widget.Toast.makeText(this, noMeatBtn.text, Toast.LENGTH_SHORT).show()
+
+        }
+
+
+
     }
 }
