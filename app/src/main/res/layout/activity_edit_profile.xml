@@ -12,13 +12,15 @@
         android:layout_width="46dp"
         android:layout_height="44dp"
         android:layout_marginTop="52dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155"
-        app:srcCompat="@drawable/baseline_keyboard_arrow_left_24" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_keyboard_arrow_left_24"
+        android:contentDescription="back btn"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView14"
@@ -32,7 +34,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.31"
         app:layout_constraintStart_toEndOf="@+id/backBtn"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView12"
@@ -44,7 +47,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
         app:layout_constraintVertical_bias="0.088"
-        app:srcCompat="@drawable/rounded_rectangle" />
+        app:srcCompat="@drawable/rounded_rectangle"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView15"

@@ -63,8 +63,8 @@
 
     <TextView
         android:id="@+id/textView34"
-        android:layout_width="303dp"
-        android:layout_height="115dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/fredoka_one"
         android:gravity="center"
         android:text="You Orders Have Been Placed!"
